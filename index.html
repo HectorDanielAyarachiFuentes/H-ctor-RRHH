@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Héctor RRHH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Héctor RRHH</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="nav" id="nav">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="perfil" class="seccion perfil">
+    <img src="https://scontent.fnqn2-1.fna.fbcdn.net/v/t39.30808-6/495965386_10070684316356232_1163414014939366559_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH4at3ANM9OsmuuQ4-0wuuF7-d69IYbFwDv53r0hhsXAKpoPc1ygjvi4D7GGiVpbOgdg7WHO-hp3MGiuy5BCnrC&_nc_ohc=91Z2YFDkCzEQ7kNvwGxjBc3&_nc_oc=Adnu7MvHk_QEwcfNcy2FtKm86g2GJ2kMDJr73NrcVJgtaq1ApQnkTkNq8XTQ3Oa2raFfp00OwkVZ8lEpXeL8CcNI&_nc_zt=23&_nc_ht=scontent.fnqn2-1.fna&_nc_gid=mlJOUNwm94EFo-2vZEOGAg&oh=00_AfNwm_4Kbp83nu0ncmt2e9SgExByp_-S1RS1FvG2-mWA0Q&oe=685BC83D" alt="Foto de Héctor" class="foto">
+    <h1>Héctor Gómez</h1>
+    <p>
+      Profesional en Recursos Humanos con más de 10 años de experiencia en gestión del talento, cultura organizacional y liderazgo estratégico. Focalizado en el desarrollo de personas y equipos de alto rendimiento.
+    </p>
+  </section>
+
+  <section id="experiencia" class="seccion experiencia">
+    <h2>Experiencia</h2>
+    <ul>
+      <li><strong>Jefe de RRHH</strong> – Empresa X (2020 - Presente)</li>
+      <li><strong>Analista de Selección</strong> – Empresa Y (2016 - 2020)</li>
+      <li><strong>Asistente de Personal</strong> – Empresa Z (2012 - 2016)</li>
+    </ul>
+  </section>
+
+  <section id="educacion" class="seccion educacion">
+    <h2>Educación</h2>
+    <ul>
+      <li><strong>Licenciatura en Recursos Humanos</strong> – Universidad Nacional</li>
+      <li><strong>Diplomado en Gestión del Cambio</strong> – UBA</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+    <p>📧 hector.rrhh@example.com</p>
+    <p>📱 +54 9 11 1234 5678</p>
+    <p>🌐 linkedin.com/in/hector-rrhh</p>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("activo");
+    });
+  </script>
+      <script src="script.js"></script>
+
+</body>
+</html>

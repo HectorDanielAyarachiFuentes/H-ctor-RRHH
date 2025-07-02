@@ -1,0 +1,120 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* --- HEADER + NAV --- */
+header {
+  background: #00695c;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #b2dfdb;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* --- SECCIONES --- */
+.seccion {
+  padding: 7rem 2rem 3rem;
+  text-align: center;
+  min-height: 100vh;
+}
+.perfil {
+  background: #e0f2f1;
+}
+.perfil .foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+.experiencia {
+  background: #fff3e0;
+}
+.educacion {
+  background: #ede7f6;
+}
+.contacto {
+  background: #dcedc8;
+}
+h1, h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: #004d40;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav.activo {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.5rem 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+}
